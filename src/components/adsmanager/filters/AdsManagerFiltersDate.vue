@@ -1,9 +1,10 @@
 <template>
   <date-range-picker
-    :date-range="globalFilters.dates"
+    :date-range="dateRange"
     style="width: 100%;"
     :locale-data="localeData"
     auto-apply
+    control-container-class="form-control"
     @select="changeDates"
   >
     <template
@@ -40,8 +41,8 @@ export default {
     return {
       moment,
       dateRange: {
-        startDate: '2020-04-23',
-        endDate: '2020-04-23'
+        startDate: moment().startOf('year').format('YYYY-MM-DD'),
+        endDate: moment().endOf('year').format('YYYY-MM-DD'),
       },
       localeData: {
         direction: 'ltr',
