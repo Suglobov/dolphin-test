@@ -1,0 +1,499 @@
+{
+	"adsmanager": {
+		"accounts": {
+			"initPersonalCab": {
+				"actionText": "Создать личный кабинет"
+			},
+			"noFacebookId": "Нет FB ID!",
+			"noFacebookIdInfo": {
+				"1": "Facebook ID - это ID социального профиля Facebook.",
+				"2": "Без его наличия невозможно выполнить ни одного запроса к Facebook API.",
+				"3": "Поэтому Dolphin пробивает этот ID в первую очередь - сразу после добавления аккаунта в систему. ",
+				"4": "Но иногда случается так, что после добавления аккаунта по какой-либо причине не пробивается.",
+				"5": "В этом случае нужно нажать \"Проверить токен\" вручную в интерфейсе.",
+				"6": "Если после повторной проверки токена ID не появился, рекомендуем проверить работоспособность ваших прокси. В 95% случаев дело именно в них.",
+				"button": "Понятно",
+				"title": "Что значит \"Нет FB ID\"?"
+			},
+			"rulesAccepted": "Правила приняты",
+			"shared": "Доступы"
+		},
+		"bms": {
+			"alert": "Отображение статистики в разработке"
+		},
+		"cabs": {
+			"actions": {
+				"applyAutomationRule": "Применить автоправило",
+				"applyAutomationRulesGroup": "Применить группу автоправил",
+				"attachBankCard": "Привязать карту",
+				"changeBillingCountry": "Изменить страну биллинга",
+				"clearAllAutomationRules": "Снять все автоправила",
+				"createPixel": "Создать пиксель",
+				"turnOffNotifications": "Выключить уведомления",
+				"turnOnNotifications": "Включить уведомления",
+				"updateCabsList": "Обновить список кабинетов"
+			},
+			"filters": {
+				"active": "Активные",
+				"archived": "Архивированные кабинеты",
+				"attachedCard": "Привязана ли карта",
+				"attachedCardRadios": {
+					"no": "Без карты",
+					"yes": "Есть карта"
+				},
+				"businessCabs": "Кабинеты БМов",
+				"cabType": "Тип кабинета",
+				"cabTypes": {
+					"all": "Все",
+					"business": "БМ",
+					"personal": "Личный"
+				},
+				"onlyBlocked": "Заблокированные",
+				"personalCabs": "Личные кабинеты",
+				"showArchivedCabs": "Показывать архивированные",
+				"underActiveAccounts": "С активными аккаунтами",
+				"withCard": "Есть привязанная карта",
+				"withDebt": "С задолженностью",
+				"withoutCard": "Без привязанной карты"
+			}
+		},
+		"cols": {
+			"account_bms": "БМы аккаунта",
+			"account_fan_pages": "Фан-пейджи аккаунта",
+			"action_app_custom_event": {
+				"Frequency": "Частота",
+				"fb_mobile_achievement_unlocked": "Запуски приложения",
+				"fb_mobile_activate_app": "Запуски приложения",
+				"fb_mobile_add_payment_info": "Ввод платежных данных",
+				"fb_mobile_add_to_cart": "Добавления в корзину",
+				"fb_mobile_add_to_wishlist": "Добавления в список желаний",
+				"fb_mobile_complete_registration": "Регистрации",
+				"fb_mobile_content_view": "Просмотры контента",
+				"fb_mobile_initiated_checkout": "Оформления заказов",
+				"fb_mobile_level_achieved": "Достижения",
+				"fb_mobile_purchase": "Покупки (приложение)",
+				"fb_mobile_rate": "Оценки",
+				"fb_mobile_search": "Поиски",
+				"fb_mobile_spent_credits": "Потраченные кредиты",
+				"fb_mobile_tutorial_completion": "Завершения обучения",
+				"other": "Прочие действия"
+			},
+			"action_app_install": "Установки",
+			"action_app_use": "Использования",
+			"action_checkin": "Чекины",
+			"action_comment": "Комментарии",
+			"action_credit_spent": "Потраченные кредиты",
+			"action_games": {
+				"plays": "Кол-во игр"
+			},
+			"action_landing_page_view": "Просмотры лендинга",
+			"action_like": "Лайки страницы",
+			"action_link_click": "Клики по ссылке",
+			"action_mobile_app_install": "Установки",
+			"action_offsite_conversion": {
+				"fb_pixel_add_payment_info": "Добавления платежный данных",
+				"fb_pixel_add_to_cart": "Добавления в корзину",
+				"fb_pixel_add_to_wishlist": "Добавления в список желаний",
+				"fb_pixel_complete_registration": "Завершение регистрации",
+				"fb_pixel_initiate_checkout": "Оформления заказов",
+				"fb_pixel_lead": "Лиды",
+				"fb_pixel_purchase": "Покупки",
+				"fb_pixel_search": "Поиски",
+				"fb_pixel_view_content": "Просмотры контента"
+			},
+			"action_outbound_click": "Исходящие клики",
+			"action_photo_view": "Просмотры фото страницы",
+			"action_post": "Репосты",
+			"action_post_reaction": "Реакции на пост",
+			"action_results": "Результаты",
+			"action_rsvp": "Реакции на событие",
+			"action_video_view": "3-секундные просмотры видео",
+			"ad_id": "ID объявления",
+			"adset_budget": "Бюджет адсета",
+			"adset_id": "ID адсета",
+			"approve": "Апрув",
+			"billing": "Биллинг кабинета",
+			"cab_id": "ID кабинета",
+			"cab_limit": "Лимит кабинета",
+			"campaign_budget": "Бюджет кампании",
+			"campaign_id": "ID кампании",
+			"cpm": "CPM",
+			"frequency": "Частота",
+			"impressions": "Показы",
+			"profit": "Прибыль",
+			"reach": "Охват",
+			"results": "Результаты",
+			"revenue": "Доход",
+			"roi": "ROI",
+			"spend": "Расход"
+		},
+		"tabs": {
+			"accounts": "Аккаунты",
+			"ads": "Объявления",
+			"adsets": "Адсеты",
+			"bms": "БМы",
+			"cabs": "Кабинеты",
+			"campaigns": "Кампании",
+			"dates": "Даты",
+			"tags": "Теги",
+			"users": "Пользователи"
+		},
+		"users": {
+			"add": "Добавить пользователя",
+			"available": "Доступно пользователей",
+			"edit": "Редактирование пользователя",
+			"roles": {
+				"admin": "Администратор",
+				"buyer": "Баер",
+				"teamlead": "Тимлид"
+			}
+		}
+	},
+	"common": {
+		"acceptRules": "Принять правила",
+		"access_token": "Токен",
+		"account": "Аккаунт",
+		"active": "Активные",
+		"ad": "Объявление",
+		"add": "Добавить",
+		"adset": "Адсет",
+		"all": "Все",
+		"allFilters": "Все фильтры",
+		"any": "Любой",
+		"apply": "Применить",
+		"archive": "Архивировать",
+		"archived": "Архивированные",
+		"attach": "Привязать",
+		"automationRule": "Автоправило",
+		"automationRulesGroup": "Группа автоправил",
+		"bm": "БМ",
+		"cab": "Кабинет",
+		"campaign": "Кампания",
+		"changeBudget": "Изменить бюджет",
+		"changePassword": "Сменить пароль",
+		"check": "Проверить",
+		"checkTokens": "Проверить токены",
+		"clear": "Очистить",
+		"close": "Закрыть",
+		"columns": "Столбцы",
+		"confirmPassword": "Подтвердите пароль",
+		"confirmPlease": "Подверди плиз",
+		"conversionRate": "CR",
+		"country": "Страна",
+		"cpa": "CPA",
+		"create": "Создать",
+		"createBm": "Создать БМ",
+		"createFanPage": "Создать фан пейдж",
+		"creativeId": "ID креатива",
+		"daily": "Дневной",
+		"date": "Дата",
+		"delete": "Удалить",
+		"disapproved": "Отклонено",
+		"displayName": "Отображаемое имя",
+		"dolphinId": "Dolphin ID",
+		"duplicate": "Дублировать",
+		"email": "Email",
+		"error": "Ошибка",
+		"every": "Каждые",
+		"existingProxy": "Существующий прокси",
+		"externalIP": "Внешний IP",
+		"facebookId": "Facebook ID",
+		"facebookProfile": "Facebook профиль",
+		"fbApiLog": "Лог обращений к API Facebook",
+		"filters": "Фильтры",
+		"finance": "Финансы",
+		"host": "Хост",
+		"id": "ID",
+		"lifetime": "На весь срок",
+		"limit": "Лимит",
+		"link": "Ссылка",
+		"loading": "Загрузка...",
+		"login": "Логин",
+		"manageTags": "Теги",
+		"min": "Мин",
+		"name": "Название",
+		"newBudget": "Новый бюджет",
+		"newPassword": "Новый пароль",
+		"no": "Нет",
+		"noCard": "Без карты",
+		"noData": "Нет данных",
+		"noName": "Без названия",
+		"optional": "Необязательно",
+		"owner": "Владелец",
+		"password": "Пароль",
+		"pause": "Пауза",
+		"pay": "Оплатить",
+		"pendingReview": "На модерации",
+		"permissions": "Права доступа",
+		"pixel": "Пиксель",
+		"port": "Порт",
+		"proxy": "Прокси",
+		"quantity": "кол-во",
+		"refreshStat": "Обновить стату",
+		"remove": "Убрать",
+		"rename": "Переименовать",
+		"requesting": "Делаю запрос",
+		"required": "Обязательно",
+		"result": "Результат",
+		"role": "Роль",
+		"save": "Сохранить",
+		"saved": "Сохранил",
+		"search": "Поиск",
+		"selectAll": "Выбрать все",
+		"selected": "Выбрано",
+		"settings": "Настройки",
+		"share": "Поделиться",
+		"shared": "Доступы",
+		"somethingWentWrong": "Что-то пошло не так",
+		"start": "Старт",
+		"status": "Статус",
+		"success": "Успешно",
+		"tags": "Теги",
+		"take": "Взять",
+		"thumb": "Превью",
+		"totalSpend": "Расход",
+		"type": "Тип",
+		"unarchive": "Разархивировать",
+		"unpublished": "Не опубликовано",
+		"unselectAll": "Убрать все",
+		"user": "Пользователь",
+		"useragent": "Useragent",
+		"waiting": "Ожидаю",
+		"whatsThat": "Что это?",
+		"yes": "Да"
+	},
+	"dialogs": {
+		"accounts": {
+			"acceptRules": {
+				"loadingText": "Принимаю правила"
+			},
+			"assignTags": {
+				"success": "Теги сохранены",
+				"title": "Назначить теги на аккаунт [{accountName}]"
+			},
+			"checkToken": {
+				"connectionError": "Ошибка соединения с аккаунтом. Вероятно, проблема с прокси.",
+				"ok": "Токен в порядке",
+				"tokenError": "Токен отлетел"
+			},
+			"createBm": {
+				"bmName": "Название БМ",
+				"randomEmails": "Рандомные почты",
+				"takeFromDictionary": "Взять названия из словаря",
+				"title": "Создание БМов",
+				"waitingForStart": ""
+			},
+			"createFanPage": {
+				"fanPageCategory": "Категория страницы",
+				"fanPageName": "Название страницы",
+				"loadingText": "Создаю страницы",
+				"sharedCategoryId": "Категория для всех страниц",
+				"sharedPageName": "Название для всех страниц",
+				"textHint": "Вы можете использовать <a href=\"http://umstrategies.com/what-is-spintax/\" target=\"_blank\">spintax</a> для рандомизации названия. Например:<br><br><b>{Хорошие|Крутые} {новости|советы}</b>",
+				"title": "Создать фан пейдж"
+			},
+			"delete": {
+				"success": "Удалил"
+			},
+			"edit": {
+				"title": "Редактирование аккаунта [{accountName}]"
+			},
+			"multipeShare": {
+				"addPermissions": "Добавить права",
+				"removePermissions": "Снять права",
+				"title": "Поделиться аккаунтами"
+			},
+			"multipleAssignTags": {
+				"addTags": "Добавить теги",
+				"removeTags": "Убрать теги",
+				"title": "Назначить теги аккаунтам"
+			},
+			"multipleTokensCheck": {
+				"title": "Проверка токенов"
+			},
+			"share": {
+				"permissions": {
+					"actions": "Выполнять действия",
+					"edit": "Редактирование",
+					"read": "Просмотр",
+					"share": "Раздавать",
+					"stat": "Статистика",
+					"view": "Просмотр"
+				},
+				"success": "Сохранил",
+				"title": "Раздача прав на аккаунт [{accountName}]"
+			},
+			"singleAdd": {
+				"title": "Добавить аккаунт"
+			}
+		},
+		"adsmanager": {
+			"columns": {
+				"savePresetLabel": "Сохранить (необязательно)",
+				"setupCols": "Настроить столбцы",
+				"sharePresetLabel": "Показывать набор другим пользователям",
+				"success": "Столбцы сохранены"
+			},
+			"refresh": {
+				"loadingText": "Обновляю стату"
+			}
+		},
+		"apiError": {
+			"message": "Скопируйте и отправьте этот код разработчику",
+			"title": "Ошибка API"
+		},
+		"cabs": {
+			"applyAutomationRule": {
+				"loadingText": "Применяю автоправило",
+				"title": "Применить автоправило"
+			},
+			"applyAutomationRulesGroup": {
+				"loadingText": "Применить группу автоправил",
+				"title": "Применить группу автоправил"
+			},
+			"attachCard": {
+				"cardNumber": "Номер карты",
+				"cvc": "CVC2/CVV2",
+				"loadingText": "Привязываю карту",
+				"mm": "ММ",
+				"title": "Привязка карты",
+				"yy": "ГГ"
+			},
+			"changeCountry": {
+				"loadingText": "Меняю страну",
+				"title": "Изменить страну"
+			},
+			"createPixel": {
+				"loadingText": "Создание пикселей"
+			},
+			"notificationsOff": {
+				"loadingText": "Выключаю уведомления"
+			},
+			"notificationsOn": {
+				"loadingText": "Включаю уведомления"
+			},
+			"payment": {
+				"balance": "К оплате",
+				"cannotPay": "Невозможно провести оплату",
+				"choosePaymentMethod": "Выберите платежку",
+				"noPaymentMethods": "Нет платежек",
+				"title": "Проплатить кабинет"
+			},
+			"rename": {
+				"loadingText": "Переименовываю кабинеты"
+			},
+			"unarchive": {
+				"loadingText": "Разархивирую кабинеты"
+			},
+			"updateCabsList": {
+				"loadingText": "Обновляю"
+			}
+		},
+		"changeBudget": {
+			"loadingText": "Изменяю бюджеты"
+		},
+		"confirm": "Подтверди плиз",
+		"duplicate": {
+			"loadingText": "Дублирую",
+			"promptText": "Количество копий?"
+		},
+		"fbApiLog": {
+			"newAtTheBeggining": "Сначала новые",
+			"onlyWithError": "Только ошибки",
+			"shareLink": "Ссылка для просмотра лога"
+		},
+		"pause": {
+			"loadingText": "Останавливаю"
+		},
+		"proxy": {
+			"add": {
+				"checkYourself": "Проверьте, прежде чем добавить",
+				"formats": "<p>Возможные форматы:</p>\n<ul>\n<li>192.168.0.1:8000</li>\n<li>http://192.168.0.1:8000:myproxy</li>\n<li>socks5://login:password@192.168.0.1:8000</li>\n<li>192.168.0.1:8000:login:password</li>\n</ul>\n<br />\n<p>*По желанию можно добавить <b>:название</b> в конце любого варианта<br />\n**Если в начала вы не указываете тип прокси, система примет их за HTTP</p>",
+				"title": "Добавить прокси"
+			},
+			"check": {
+				"loadingText": "Проверяю"
+			},
+			"delete": {
+				"loadingText": "Удаляю"
+			},
+			"edit": {
+				"title": "Редактирование прокси"
+			}
+		},
+		"share": {
+			"actions": "Действия",
+			"addPermissions": "Добавить права",
+			"edit": "Редактировать",
+			"removePermissions": "Снять права",
+			"title": "Раздать права доступа",
+			"usage": "Использовать"
+		},
+		"start": {
+			"loadingText": "Запускаю"
+		},
+		"tags": {
+			"addTags": "Добавить теги",
+			"removeTags": "Убрать теги",
+			"title": "Управление тегами"
+		}
+	},
+	"filters": {
+		"accountStatus": "Статус аккаунта",
+		"cabStatus": "Статус кабинета",
+		"dates": "Даты",
+		"more": "+ все фильтры",
+		"searchByName": " Поиск по названию",
+		"showAll": "Показать все фильтры",
+		"status": "Фильтр по статусу",
+		"tags": "Фильтр по тегам"
+	},
+	"proxy": {
+		"accountsCount": "Кол-во аккаунтов",
+		"active": "Активный",
+		"error": "Ошибка",
+		"lastCheck": "Последняя проверка",
+		"new": "Новый"
+	},
+	"settings": {
+		"facebookApi": {
+			"comments": {
+				"delete_all": "Удалять все",
+				"download": "Только загружать",
+				"hide_all": "Скрывать все",
+				"mode": "Режим работы"
+			},
+			"dataUpdate": {
+				"comments": "Работать с комментариями",
+				"sync": "Обновлять данные аккаунтов",
+				"title": "Обновление данных"
+			},
+			"mobileProxy": {
+				"title": "Мобильные прокси",
+				"ui": "Менять IP при запросах в интерфейсе"
+			}
+		},
+		"general": {
+			"useGlobals": {
+				"title": "Глобальные настройки",
+				"useGlobals": "Использовать мои настройки для всех"
+			}
+		},
+		"tabs": {
+			"backups": "Бэкапы",
+			"exportCosts": "Экспорт расходов",
+			"facebookApi": "Facebook API",
+			"general": "Основные",
+			"notifications": "Уведомления"
+		}
+	},
+	"sidebar": {
+		"adsManager": "Ads Manager",
+		"automationRules": "Авто-правила",
+		"bankCards": "Банковские карты",
+		"comments": "Комментарии",
+		"createAds": "Залить рекламу",
+		"settings": "Настройки",
+		"tracker": "Трекер"
+	}
+}

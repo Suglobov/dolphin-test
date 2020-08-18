@@ -1,0 +1,499 @@
+{
+	"adsmanager": {
+		"accounts": {
+			"initPersonalCab": {
+				"actionText": "Init personal ad account"
+			},
+			"noFacebookId": "No FB ID!",
+			"noFacebookIdInfo": {
+				"1": "Facebook ID is the Facebook social profile ID.",
+				"2": "Without its presence, it is impossible to make any request to Facebook API.",
+				"3": "That's why Dolphin loads this ID in the first place - immediately after adding an account to the system.",
+				"4": "But sometimes it happens that after adding an account for some reason it does not break through.",
+				"5": "In this case, you need to click \"Check Token\" manually in the interface.",
+				"6": "If, after re-checking the token, the ID did not appear, we recommend checking the functionality of your proxies. In 95% of cases, it is in them.",
+				"button": "Got it",
+				"title": "No FB ID. What does it mean?"
+			},
+			"rulesAccepted": "Rules accepted",
+			"shared": "Shared"
+		},
+		"bms": {
+			"alert": "This tab shows only BMs list now. Stat is coming soon."
+		},
+		"cabs": {
+			"actions": {
+				"applyAutomationRule": "Apply automation rule",
+				"applyAutomationRulesGroup": "Apply automation rules group",
+				"attachBankCard": "Attach bank card",
+				"changeBillingCountry": "Change billing country",
+				"clearAllAutomationRules": "Clear all automation rules",
+				"createPixel": "Create pixel",
+				"turnOffNotifications": "Turn notifications off",
+				"turnOnNotifications": "Turn notifications on",
+				"updateCabsList": "Update cabs list"
+			},
+			"filters": {
+				"active": "Active",
+				"archived": "Archived cabs",
+				"attachedCard": "Attached card",
+				"attachedCardRadios": {
+					"no": "Without card",
+					"yes": "With card"
+				},
+				"businessCabs": "Business Manager cabs",
+				"cabType": "Cab type",
+				"cabTypes": {
+					"all": "All",
+					"business": "Business Manager",
+					"personal": "Personal"
+				},
+				"onlyBlocked": "Blocked",
+				"personalCabs": "Personal cabs",
+				"showArchivedCabs": "Show archived cabs",
+				"underActiveAccounts": "Under active accounts",
+				"withCard": "With bank card",
+				"withDebt": "Unsettled",
+				"withoutCard": "Without bank card"
+			}
+		},
+		"cols": {
+			"account_bms": "Account's BMs",
+			"account_fan_pages": "Account's fan pages",
+			"action_app_custom_event": {
+				"Frequency": "Frequency",
+				"fb_mobile_achievement_unlocked": "Mobile App Feature Unlocks",
+				"fb_mobile_activate_app": "Mobile App Starts",
+				"fb_mobile_add_payment_info": "Mobile App Payment Details",
+				"fb_mobile_add_to_cart": "Mobile App Adds To Cart",
+				"fb_mobile_add_to_wishlist": "Mobile App Adds to Wishlist",
+				"fb_mobile_complete_registration": "Mobile App Registrations",
+				"fb_mobile_content_view": "Mobile App Content Views",
+				"fb_mobile_initiated_checkout": "Mobile App Checkouts",
+				"fb_mobile_level_achieved": "Mobile App Achievements",
+				"fb_mobile_purchase": "Mobile App Purchases",
+				"fb_mobile_rate": "Mobile App Ratings",
+				"fb_mobile_search": "Mobile App Searchs",
+				"fb_mobile_spent_credits": "Mobile App Credit Spends",
+				"fb_mobile_tutorial_completion": "Mobile App Tutorial Completions",
+				"other": "Other Mobile App Actions"
+			},
+			"action_app_install": "App Installs",
+			"action_app_use": "App Uses",
+			"action_checkin": "Check-ins",
+			"action_comment": "Post Comments",
+			"action_credit_spent": "Credit Spends",
+			"action_games": {
+				"plays": "Game Plays"
+			},
+			"action_landing_page_view": "Landing Page Views",
+			"action_like": "Page Likes",
+			"action_link_click": "Link Clicks",
+			"action_mobile_app_install": "Mobile App Installs",
+			"action_offsite_conversion": {
+				"fb_pixel_add_payment_info": "Adds Payment Info",
+				"fb_pixel_add_to_cart": "Adds To Cart",
+				"fb_pixel_add_to_wishlist": "Adds To Wishlist",
+				"fb_pixel_complete_registration": "Completed Registration",
+				"fb_pixel_initiate_checkout": "Initiates Checkout",
+				"fb_pixel_lead": "Leads",
+				"fb_pixel_purchase": "Purchases",
+				"fb_pixel_search": "Searchs",
+				"fb_pixel_view_content": "Views Content"
+			},
+			"action_outbound_click": "Outbound Clicks",
+			"action_photo_view": "Page Photo Views",
+			"action_post": "Post Shares",
+			"action_post_reaction": "Post Reactions",
+			"action_results": "Results",
+			"action_rsvp": "Event Responses",
+			"action_video_view": "3-Second Video Views",
+			"ad_id": "Ad ID",
+			"adset_budget": "Adset's budget",
+			"adset_id": "Adset ID",
+			"approve": "Approve",
+			"billing": "Cab billing",
+			"cab_id": "Cab ID",
+			"cab_limit": "Cab limit",
+			"campaign_budget": "Campaign's budget",
+			"campaign_id": "Campaign ID",
+			"cpm": "CPM",
+			"frequency": "Frequency",
+			"impressions": "Impressions",
+			"profit": "Profit",
+			"reach": "Reach",
+			"results": "Results",
+			"revenue": "Revenue",
+			"roi": "ROI",
+			"spend": "Spend"
+		},
+		"tabs": {
+			"accounts": "Accounts",
+			"ads": "Ads",
+			"adsets": "Adsets",
+			"bms": "BMs",
+			"cabs": "Cabs",
+			"campaigns": "Campaigns",
+			"dates": "Dates",
+			"tags": "Tags",
+			"users": "Users"
+		},
+		"users": {
+			"add": "Add user",
+			"available": "New users available",
+			"edit": "Edit user",
+			"roles": {
+				"admin": "Administrator",
+				"buyer": "Buyer",
+				"teamlead": "Teamlead"
+			}
+		}
+	},
+	"common": {
+		"acceptRules": "Accept rules",
+		"access_token": "Access token",
+		"account": "Account",
+		"active": "Active",
+		"ad": "Ad",
+		"add": "Add",
+		"adset": "Adset",
+		"all": "All",
+		"allFilters": "All filters",
+		"any": "Any",
+		"apply": "Apply",
+		"archive": "Archive",
+		"archived": "Archived",
+		"attach": "Attach",
+		"automationRule": "Automation rule",
+		"automationRulesGroup": "Automation rules group",
+		"bm": "Business Manager",
+		"cab": "Cabinet",
+		"campaign": "Campaign",
+		"changeBudget": "Change budget",
+		"changePassword": "Change password",
+		"check": "Check",
+		"checkTokens": "Check tokens",
+		"clear": "Clear",
+		"close": "Close",
+		"columns": "Columns",
+		"confirmPassword": "Confirm password",
+		"confirmPlease": "Confirm please",
+		"conversionRate": "CR",
+		"country": "Country",
+		"cpa": "CPA",
+		"create": "Create",
+		"createBm": "Create BM",
+		"createFanPage": "Create fan page",
+		"creativeId": "Creative ID",
+		"daily": "Daily",
+		"date": "Date",
+		"delete": "Delete",
+		"disapproved": "Disapproved",
+		"displayName": "Display name",
+		"dolphinId": "Dolphin ID",
+		"duplicate": "Duplicate",
+		"email": "Email",
+		"error": "Error",
+		"every": "Every",
+		"existingProxy": "Existing Proxy",
+		"externalIP": "External IP",
+		"facebookId": "Facebook ID",
+		"facebookProfile": "Facebook Profile",
+		"fbApiLog": "Facebook API log",
+		"filters": "Filters",
+		"finance": "Finances",
+		"host": "Host",
+		"id": "ID",
+		"lifetime": "Lifetime",
+		"limit": "Limit",
+		"link": "Link",
+		"loading": "Loading...",
+		"login": "Login",
+		"manageTags": "Manage tags",
+		"min": "Min",
+		"name": "Name",
+		"newBudget": "New budget",
+		"newPassword": "New password",
+		"no": "No",
+		"noCard": "No card",
+		"noData": "No data",
+		"noName": "No name",
+		"optional": "Optional",
+		"owner": "Owner",
+		"password": "Password",
+		"pause": "Pause",
+		"pay": "Pay",
+		"pendingReview": "Pending review",
+		"permissions": "Permissions",
+		"pixel": "Pixel",
+		"port": "Port",
+		"proxy": "Proxy",
+		"quantity": "QTY",
+		"refreshStat": "Refresh stats",
+		"remove": "Remove",
+		"rename": "Rename",
+		"requesting": "Requesting",
+		"required": "Required",
+		"result": "Result",
+		"role": "Role",
+		"save": "Save",
+		"saved": "Saved",
+		"search": "Search",
+		"selectAll": "Select all",
+		"selected": "Selected",
+		"settings": "Settings",
+		"share": "Share",
+		"shared": "Shared",
+		"somethingWentWrong": "Something went wrong",
+		"start": "Start",
+		"status": "Status",
+		"success": "Success",
+		"tags": "Tags",
+		"take": "Take",
+		"thumb": "Thumb",
+		"totalSpend": "Spend",
+		"type": "Type",
+		"unarchive": "Unarchive",
+		"unpublished": "Unpublished",
+		"unselectAll": "Unselect all",
+		"user": "User",
+		"useragent": "Useragent",
+		"waiting": "Waiting",
+		"whatsThat": "What's that?",
+		"yes": "Yes"
+	},
+	"dialogs": {
+		"accounts": {
+			"acceptRules": {
+				"loadingText": "Accepting rules"
+			},
+			"assignTags": {
+				"success": "Tags saved",
+				"title": "Assign tags to [{accountName}] account"
+			},
+			"checkToken": {
+				"connectionError": "Connection error. In most cases - bad proxy.",
+				"ok": "Token is valid",
+				"tokenError": "Token is invalid"
+			},
+			"createBm": {
+				"bmName": "BM name",
+				"randomEmails": "Random emails",
+				"takeFromDictionary": "Take names from dictionary",
+				"title": "Create Business Managers",
+				"waitingForStart": "Waiting"
+			},
+			"createFanPage": {
+				"fanPageCategory": "Fan page category",
+				"fanPageName": "Fan page name",
+				"loadingText": "Creating pages",
+				"sharedCategoryId": "Category for all pages",
+				"sharedPageName": "Name for all pages",
+				"textHint": "You can use dat for name randomization. Example:<br><br><b>{Good|Great} {news|advices}",
+				"title": "Create fan page"
+			},
+			"delete": {
+				"success": "Deleted"
+			},
+			"edit": {
+				"title": "Edit [{accountName}] account"
+			},
+			"multipeShare": {
+				"addPermissions": "Add permissions",
+				"removePermissions": "Remove permissions",
+				"title": "Share multiple accounts"
+			},
+			"multipleAssignTags": {
+				"addTags": "Add tags",
+				"removeTags": "Remove tags",
+				"title": "Assign tags to multiple accounts"
+			},
+			"multipleTokensCheck": {
+				"title": "Checking tokens"
+			},
+			"share": {
+				"permissions": {
+					"actions": "Actions",
+					"edit": "Edit",
+					"read": "Read",
+					"share": "Share",
+					"stat": "Stats",
+					"view": "View"
+				},
+				"success": "Saved",
+				"title": "Share [{accountName}] account"
+			},
+			"singleAdd": {
+				"title": "Add account"
+			}
+		},
+		"adsmanager": {
+			"columns": {
+				"savePresetLabel": "Save as preset (optional)",
+				"setupCols": "Setup columns",
+				"sharePresetLabel": "Share preset to all users",
+				"success": "Columns saved"
+			},
+			"refresh": {
+				"loadingText": "Refreshing stat"
+			}
+		},
+		"apiError": {
+			"message": "Copy and send this code to product's developer",
+			"title": "API error caused"
+		},
+		"cabs": {
+			"applyAutomationRule": {
+				"loadingText": "Applying automation rule",
+				"title": "Apply automation rule"
+			},
+			"applyAutomationRulesGroup": {
+				"loadingText": "Apply automation rules group",
+				"title": "Apply automation rules group"
+			},
+			"attachCard": {
+				"cardNumber": "Card number",
+				"cvc": "CVC2/CVV2",
+				"loadingText": "Attaching card",
+				"mm": "MM",
+				"title": "Attach card",
+				"yy": "YY"
+			},
+			"changeCountry": {
+				"loadingText": "Changing country",
+				"title": "Change country"
+			},
+			"createPixel": {
+				"loadingText": "Creating pixels"
+			},
+			"notificationsOff": {
+				"loadingText": "Turning notifications off"
+			},
+			"notificationsOn": {
+				"loadingText": "Turning notifications on"
+			},
+			"payment": {
+				"balance": "Balance",
+				"cannotPay": "Could not pay",
+				"choosePaymentMethod": "Choose payment method",
+				"noPaymentMethods": "No payment methods",
+				"title": "Pay for ad account"
+			},
+			"rename": {
+				"loadingText": "Renaming cabs"
+			},
+			"unarchive": {
+				"loadingText": "Unarchiving cabs"
+			},
+			"updateCabsList": {
+				"loadingText": "Updating"
+			}
+		},
+		"changeBudget": {
+			"loadingText": "Changing budgets"
+		},
+		"confirm": "Confirm please",
+		"duplicate": {
+			"loadingText": "Duplicating",
+			"promptText": "Number of copies?"
+		},
+		"fbApiLog": {
+			"newAtTheBeggining": "New requests first",
+			"onlyWithError": "Errors only",
+			"shareLink": "Share link for developer"
+		},
+		"pause": {
+			"loadingText": "Pausing"
+		},
+		"proxy": {
+			"add": {
+				"checkYourself": "Check yourself before you add it",
+				"formats": "<p>Allowed formats:</p>\n<ul>\n<li>192.168.0.1:8000</li>\n<li>http://192.168.0.1:8000:myproxy</li>\n<li>socks5://login:password@192.168.0.1:8000</li>\n<li>192.168.0.1:8000:login:password</li>\n</ul>\n<br />\n<p>*Additionally you can add <b>:name</b> at the end for any of formats<br />\n**Empty type at the beginning will cause HTTP type</p>",
+				"title": "Add proxy"
+			},
+			"check": {
+				"loadingText": "Checking"
+			},
+			"delete": {
+				"loadingText": "Deleting"
+			},
+			"edit": {
+				"title": "Edit proxy"
+			}
+		},
+		"share": {
+			"actions": "Actions",
+			"addPermissions": "Add permissions",
+			"edit": "Edit",
+			"removePermissions": "Remove permissions",
+			"title": "Share permissions",
+			"usage": "Use"
+		},
+		"start": {
+			"loadingText": "Starting"
+		},
+		"tags": {
+			"addTags": "Add tags",
+			"removeTags": "Remove tags",
+			"title": "Manage tags"
+		}
+	},
+	"filters": {
+		"accountStatus": "Account status",
+		"cabStatus": "Cab status",
+		"dates": "Dates",
+		"more": "+ more filters",
+		"searchByName": "Search by name",
+		"showAll": "Show all filters",
+		"status": "Status filter",
+		"tags": "Tags filter"
+	},
+	"proxy": {
+		"accountsCount": "Accounts count",
+		"active": "Active",
+		"error": "Error",
+		"lastCheck": "Last check",
+		"new": "New"
+	},
+	"settings": {
+		"facebookApi": {
+			"comments": {
+				"delete_all": "Delete all",
+				"download": "Just download",
+				"hide_all": "Hide all",
+				"mode": "Mode"
+			},
+			"dataUpdate": {
+				"comments": "Process comments",
+				"sync": "Sync accounts data",
+				"title": "Data update"
+			},
+			"mobileProxy": {
+				"title": "Mobile proxy behavior",
+				"ui": "Change IP when requesting from UI"
+			}
+		},
+		"general": {
+			"useGlobals": {
+				"title": "Global settings",
+				"useGlobals": "Use my settings as globals"
+			}
+		},
+		"tabs": {
+			"backups": "Backups",
+			"exportCosts": "Export costs",
+			"facebookApi": "Facebook API",
+			"general": "General",
+			"notifications": "Notifications"
+		}
+	},
+	"sidebar": {
+		"adsManager": "Ads Manager",
+		"automationRules": "Automation Rules",
+		"bankCards": "Bank Cards",
+		"comments": "Comments",
+		"createAds": "Create ads",
+		"settings": "Settings",
+		"tracker": "Tracker"
+	}
+}
