@@ -27,7 +27,8 @@ export default {
     loading: {
       mainTable: false,
     },
-    stat: []
+    stat: [],
+    filters: {},
   },
   getters: {
     ...mixinDialogGetters,
@@ -41,8 +42,21 @@ export default {
     ...mixinDialogMutations,
     ...mixinSetLoading,
 
-    FILTER: state => {
-      state.campaigns.filtered = state.campaigns.all;
+    FILTER: (state) => {
+      let campaigns = state.campaigns.all;
+      const filters = state.filters;
+
+      if (filters.name) {
+        if (filters.name.length > 0) {
+          campaigns = campaigns.filter((campaign) => {
+            return (
+              campaign.name.toString().toLowerCase().search(filters.name.toLowerCase()) !== -1
+            );
+          });
+        }
+      }
+
+      state.campaigns.filtered = campaigns;
     },
 
     SET_STAT: (state, stat) => {
@@ -60,6 +74,10 @@ export default {
 
     SET_FILTERED: (state, payload) => {
       state.campaigns.filtered = payload;
+    },
+
+    SET_FILTERS_NAME: (state, payload) => {
+      state.filters.name = payload;
     },
   },
   actions: {
@@ -135,6 +153,11 @@ export default {
       context.commit('SET_ALL', []);
       context.commit('SET_FILTERED', []);
       context.commit('SET_SELECTED', []);
-    }
+    },
+
+    async setFiltersName(context, payload) {
+      context.commit('SET_FILTERS_NAME', payload);
+      context.commit('FILTER');
+    },
   }
 };

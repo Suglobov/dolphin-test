@@ -10,180 +10,191 @@
     <!-- ЛЕВАЯ ЧАСТЬ -->
     <v-col
       :cols="12"
-      :sm="9"
+      :sm="8"
     >
-      <topbar-actions />
-      
-      <div style="float: right;">
-        <!-- КНОПКИ ДЕЙСТВИЙ - ОБНОВИТЬ СТАТИСТИКУ -->
-        <refresh />
-          
-        <!-- КНОПКИ ДЕЙСТВИЙ - СТОЛБЦЫ -->
-        <div style="float: right;">
-          <topbar-cols />
-        </div>
+      <v-row>
+        <v-col
+          cols="12"
+          sm="6"
+        >
+          <topbar-actions />
+        </v-col>
+        <v-col
+          cols="12"
+          sm="6"
+        >
+          <div style="float: right;">
+            <!-- КНОПКИ ДЕЙСТВИЙ - ОБНОВИТЬ СТАТИСТИКУ -->
+            <refresh />
+              
+            <!-- КНОПКИ ДЕЙСТВИЙ - СТОЛБЦЫ -->
+            <div style="float: right;">
+              <topbar-cols />
+            </div>
 
-        <!-- КНОПКИ ДЕЙСТВИЙ - ФИЛЬТРЫ -->
-        <!-- <div style="float: right;">
-          <v-btn
-            v-if="activeFiltersCount > 0"
-            text
-            color="primary"
-            small
-            class="mr-1"
-            @click="$store.dispatch('cabs/clearFilters')"
-          >
-            <v-icon
-              class="mr-1"
-              :size="18"
-            >
-              close
-            </v-icon>
-            {{ $t('common.clear') }} {{ $t('common.filters') }}
-          </v-btn>
-          <v-menu
-            offset-y
-            open-on-hover
-            close-on-click
-          >
-            <template v-slot:activator="{ on }">
+            <!-- КНОПКИ ДЕЙСТВИЙ - ФИЛЬТРЫ -->
+            <!-- <div style="float: right;">
               <v-btn
+                v-if="activeFiltersCount > 0"
+                text
+                color="primary"
                 small
-                :text="activeFiltersCount === 0"
-                :color="activeFiltersCount === 0 ? 'primary' : 'red'"
-                style="margin-top: 1px;"
-                @click="showFilters = true"
-                v-on="on"
+                class="mr-1"
+                @click="$store.dispatch('cabs/clearFilters')"
               >
                 <v-icon
-                  :size="18"
                   class="mr-1"
+                  :size="18"
                 >
-                  filter_list
+                  close
                 </v-icon>
-                {{ $t('common.filters') }}
-                <span v-if="activeFiltersCount > 0">
-                  ({{ activeFiltersCount }})
-                </span>
+                {{ $t('common.clear') }} {{ $t('common.filters') }}
               </v-btn>
-            </template>
-            <v-list>
-              <v-list-item
-                dense
-                @click="$store.dispatch('cabs/setSpecificFilter', {filter: 'type', data: 'personal'});"
+              <v-menu
+                offset-y
+                open-on-hover
+                close-on-click
               >
-                <v-list-item-title>
-                  {{ $t('adsmanager.cabs.filters.personalCabs') }}
-                </v-list-item-title>
-              </v-list-item>
+                <template v-slot:activator="{ on }">
+                  <v-btn
+                    small
+                    :text="activeFiltersCount === 0"
+                    :color="activeFiltersCount === 0 ? 'primary' : 'red'"
+                    style="margin-top: 1px;"
+                    @click="showFilters = true"
+                    v-on="on"
+                  >
+                    <v-icon
+                      :size="18"
+                      class="mr-1"
+                    >
+                      filter_list
+                    </v-icon>
+                    {{ $t('common.filters') }}
+                    <span v-if="activeFiltersCount > 0">
+                      ({{ activeFiltersCount }})
+                    </span>
+                  </v-btn>
+                </template>
+                <v-list>
+                  <v-list-item
+                    dense
+                    @click="$store.dispatch('cabs/setSpecificFilter', {filter: 'type', data: 'personal'});"
+                  >
+                    <v-list-item-title>
+                      {{ $t('adsmanager.cabs.filters.personalCabs') }}
+                    </v-list-item-title>
+                  </v-list-item>
 
-              <v-list-item
-                dense
-                @click="$store.dispatch('cabs/setSpecificFilter', {filter: 'type', data: 'business'});"
-              >
-                <v-list-item-title>
-                  {{ $t('adsmanager.cabs.filters.businessCabs') }}
-                </v-list-item-title>
-              </v-list-item>
+                  <v-list-item
+                    dense
+                    @click="$store.dispatch('cabs/setSpecificFilter', {filter: 'type', data: 'business'});"
+                  >
+                    <v-list-item-title>
+                      {{ $t('adsmanager.cabs.filters.businessCabs') }}
+                    </v-list-item-title>
+                  </v-list-item>
 
-              <v-divider />
-              
-              <v-list-item
-                dense
-                @click="$store.dispatch('cabs/setSpecificFilter', {filter: 'accountsStatuses', data: ['ACTIVE']});"
-              >
-                <v-list-item-title>
-                  {{ $t('adsmanager.cabs.filters.underActiveAccounts') }}
-                </v-list-item-title>
-              </v-list-item>
-              
-              <v-list-item
-                dense
-                @click="$store.dispatch('cabs/setSpecificFilter', {filter: 'cabsStatuses', data: [{text: 'ACTIVE', color: 'success', value: 1}]});"
-              >
-                <v-list-item-title>
-                  {{ $t('adsmanager.cabs.filters.active') }}
-                </v-list-item-title>
-              </v-list-item>
+                  <v-divider />
+                  
+                  <v-list-item
+                    dense
+                    @click="$store.dispatch('cabs/setSpecificFilter', {filter: 'accountsStatuses', data: ['ACTIVE']});"
+                  >
+                    <v-list-item-title>
+                      {{ $t('adsmanager.cabs.filters.underActiveAccounts') }}
+                    </v-list-item-title>
+                  </v-list-item>
+                  
+                  <v-list-item
+                    dense
+                    @click="$store.dispatch('cabs/setSpecificFilter', {filter: 'cabsStatuses', data: [{text: 'ACTIVE', color: 'success', value: 1}]});"
+                  >
+                    <v-list-item-title>
+                      {{ $t('adsmanager.cabs.filters.active') }}
+                    </v-list-item-title>
+                  </v-list-item>
 
-              <v-list-item
-                dense
-                @click="$store.dispatch('cabs/setSpecificFilter', {filter: 'cabsStatuses', data: [{text: 'UNSETTLED',color: 'warning', value: 3}]});"
-              >
-                <v-list-item-title>
-                  {{ $t('adsmanager.cabs.filters.withDebt') }}
-                </v-list-item-title>
-              </v-list-item>
+                  <v-list-item
+                    dense
+                    @click="$store.dispatch('cabs/setSpecificFilter', {filter: 'cabsStatuses', data: [{text: 'UNSETTLED',color: 'warning', value: 3}]});"
+                  >
+                    <v-list-item-title>
+                      {{ $t('adsmanager.cabs.filters.withDebt') }}
+                    </v-list-item-title>
+                  </v-list-item>
 
-              <v-list-item
-                dense
-                @click="$store.dispatch('cabs/setSpecificFilter', {filter: 'cabsStatuses', data: [{text: 'DISABLED', color: 'red', value: 2}]});"
-              >
-                <v-list-item-title>
-                  {{ $t('adsmanager.cabs.filters.onlyBlocked') }}
-                </v-list-item-title>
-              </v-list-item>
+                  <v-list-item
+                    dense
+                    @click="$store.dispatch('cabs/setSpecificFilter', {filter: 'cabsStatuses', data: [{text: 'DISABLED', color: 'red', value: 2}]});"
+                  >
+                    <v-list-item-title>
+                      {{ $t('adsmanager.cabs.filters.onlyBlocked') }}
+                    </v-list-item-title>
+                  </v-list-item>
 
-              <v-list-item
-                dense
-                @click="$store.dispatch('cabs/setSpecificFilter', {filter: 'showArchived', data: true});"
-              >
-                <v-list-item-title>
-                  {{ $t('adsmanager.cabs.filters.showArchivedCabs') }}
-                </v-list-item-title>
-              </v-list-item>
+                  <v-list-item
+                    dense
+                    @click="$store.dispatch('cabs/setSpecificFilter', {filter: 'showArchived', data: true});"
+                  >
+                    <v-list-item-title>
+                      {{ $t('adsmanager.cabs.filters.showArchivedCabs') }}
+                    </v-list-item-title>
+                  </v-list-item>
 
-              <v-divider />
+                  <v-divider />
 
-              <v-list-item
-                dense
-                @click="$store.dispatch('cabs/setSpecificFilter', {filter: 'attachedCard', data: 'with-card'});"
-              >
-                <v-list-item-title>
-                  {{ $t('adsmanager.cabs.filters.withCard') }}
-                </v-list-item-title>
-              </v-list-item>
+                  <v-list-item
+                    dense
+                    @click="$store.dispatch('cabs/setSpecificFilter', {filter: 'attachedCard', data: 'with-card'});"
+                  >
+                    <v-list-item-title>
+                      {{ $t('adsmanager.cabs.filters.withCard') }}
+                    </v-list-item-title>
+                  </v-list-item>
 
-              <v-list-item
-                dense
-                @click="$store.dispatch('cabs/setSpecificFilter', {filter: 'attachedCard', data: 'without-card'});"
-              >
-                <v-list-item-title>
-                  {{ $t('adsmanager.cabs.filters.withoutCard') }}
-                </v-list-item-title>
-              </v-list-item>
+                  <v-list-item
+                    dense
+                    @click="$store.dispatch('cabs/setSpecificFilter', {filter: 'attachedCard', data: 'without-card'});"
+                  >
+                    <v-list-item-title>
+                      {{ $t('adsmanager.cabs.filters.withoutCard') }}
+                    </v-list-item-title>
+                  </v-list-item>
 
-              <v-divider />
+                  <v-divider />
 
-              <v-list-item
-                dense
-                @click="showFilters = true"
-              >
-                <v-list-item-title>
-                  {{ $t('filters.showAll').toUpperCase() }}
-                </v-list-item-title>
-              </v-list-item>
-            </v-list>
-          </v-menu>
-        </div> -->
-      </div>
+                  <v-list-item
+                    dense
+                    @click="showFilters = true"
+                  >
+                    <v-list-item-title>
+                      {{ $t('filters.showAll').toUpperCase() }}
+                    </v-list-item-title>
+                  </v-list-item>
+                </v-list>
+              </v-menu>
+            </div> -->
+          </div>
+        </v-col>
+      </v-row>
     </v-col>
     <!-- ПРАВАЯ ЧАСТЬ -->
     <v-col
       cols="12"
-      sm="3"
+      sm="4"
     >
       <v-row>
         <!-- ФИЛЬТР ПО ДАТЕ -->
         <v-col
           cols="12"
-          sm="12"
+          sm="6"
         >
           <filters-date />
         </v-col>
 
         <!-- ПОИСК ПО НАЗВАНИЮ -->
-        <!-- <v-col
+        <v-col
           cols="12"
           sm="6"
         >
@@ -198,7 +209,7 @@
             :value="filters.name"
             @input="filterName"
           />
-        </v-col> -->
+        </v-col>
       </v-row>
     </v-col>
   </v-row>
@@ -281,8 +292,9 @@ export default {
       this.nameSearchText = name;
       setTimeout(async () => {
         if (name === this.nameSearchText) {
-          await this.$store.dispatch('cabs/setSpecificFilter', {filter: 'name', data: name});
-        }  
+          await this.$store.dispatch('campaigns/setFiltersName', name);
+          this.$store.dispatch('campaigns/loadStat');
+        }
       }, 500);
     },
   }
